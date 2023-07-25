@@ -1,0 +1,89 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : 0;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background-color : #bbc6fa;
+}
+.quoteBox{
+    background-color : #fff;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    padding : 40px;
+    text-align : center;
+    box-shadow : 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    width : 700px;
+    max-width : 100%;
+}
+.quoteBox h1{
+    position : relative;
+}
+.quoteBox h1::after{
+    content : "";
+    position : absolute;
+    width : 75px;
+    height : 3px;
+    background: rgb(23, 124, 229);
+    bottom : -10px;
+    left : 50%;
+    transform : translateX(-50%);
+}
+.quoteBox blockquote{
+    margin-top : 30px;
+    margin-bottom : 20px;
+    min-height : 110px;
+    font-size : 1.25rem;
+}
+.quoteBox blockquote::after, .quoteBox blockquote::before{
+    content : '"';
+}
+.quoteBox span{
+    margin-bottom : 20px;
+    position : relative;
+    right : -40%;
+}
+.quoteBox span::before{
+    content : "";
+    background : rgb(23, 124, 229);
+    height : 2px;
+    width : 15px;
+    position : absolute;
+    top : 50%;
+    left : -30px;
+}
+.buttons{
+    margin-top : 20px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    gap : 20px;
+}
+.buttons button{
+    background : rgb(23, 124, 229);
+    border : 1px solid rgb(23, 124, 229);
+    color : #fff;
+    border-radius : 25px;
+    border : 0;
+    outline : 0;
+    cursor : pointer;
+    padding : 15px 35px;
+}
+#tweetBtn{
+    background-color : #fff;
+    border : 1px solid rgb(23, 124, 229);
+    color : black;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 10px;
+    padding : 12px 35px;
+}
+#tweetBtn img{
+    height : 25px;
+    width : 25px;
+}
